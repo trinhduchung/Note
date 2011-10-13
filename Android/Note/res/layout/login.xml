@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#00ffffff"
+  >
+    <ImageView
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"
+     android:layout_centerInParent="true"
+     android:background="@drawable/login_bg"
+    />
+    
+    <TextView
+    	android:id="@+id/txtLogin"
+    	android:layout_width="wrap_content" 
+     	android:layout_height="wrap_content"
+     	android:layout_alignParentTop="true"
+     	android:layout_centerHorizontal="true"
+     	android:text="Login"
+     	android:textColor="#ffffff"
+     	android:textStyle="bold"
+     	android:textSize="22dp"
+     	android:layout_marginTop="110dp"
+    />
+    
+    <LinearLayout
+    	android:id="@+id/usn"
+    	android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     	android:layout_alignTop="@id/txtLogin"
+     	android:layout_marginTop="60dp"
+    >
+    <TextView
+    	android:layout_width="wrap_content" 
+     	android:layout_height="wrap_content"
+     	android:text="Username"
+     	android:textColor="#ffffff"
+     	android:textStyle="bold"
+     	android:textSize="20dp"
+     	android:layout_marginLeft="10dp"
+    />
+    
+    <EditText
+    	android:id="@+id/edtUsername"
+    	android:layout_width="match_parent" 
+     	android:layout_height="wrap_content"
+     	android:layout_marginRight="10dp"
+     	android:hint="username"
+    />
+    </LinearLayout>
+    
+    <LinearLayout
+    	android:id="@+id/pw"
+    	android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     	android:layout_below="@id/usn"
+     	android:layout_marginTop="30dp"
+    >
+    <TextView
+    	android:layout_width="wrap_content" 
+     	android:layout_height="wrap_content"
+     	android:text="Password"
+     	android:textColor="#ffffff"
+     	android:textStyle="bold"
+     	android:textSize="20dp"
+     	android:layout_marginLeft="10dp"
+    />
+    
+    <EditText
+    	android:id="@+id/edtPassword"
+    	android:layout_width="match_parent" 
+     	android:layout_height="wrap_content"
+     	android:layout_marginRight="10dp"
+     	android:hint="password"
+    />
+    </LinearLayout>
+    
+    <LinearLayout
+    	
+    	android:layout_width="wrap_content" 
+     	android:layout_height="wrap_content"
+     	android:layout_below="@id/pw"
+     	android:layout_marginTop="50dp"
+     	android:layout_centerHorizontal="true"
+    >
+    <Button
+    	android:id="@+id/btnSubmit"
+    	android:layout_width="wrap_content" 
+     	android:layout_height="wrap_content"
+     	android:layout_marginLeft="10dp"
+     	android:text="Submit"
+     	android:background="@drawable/button_bg"
+     	android:layout_marginRight="5dp"
+    />
+    
+    <Button
+    	android:id="@+id/btnCancel"
+    	android:layout_width="wrap_content" 
+     	android:layout_height="wrap_content"
+     	android:layout_marginRight="10dp"
+     	android:text="Cancel"
+     	android:background="@drawable/button_bg"
+    />
+    </LinearLayout>
+</RelativeLayout>
