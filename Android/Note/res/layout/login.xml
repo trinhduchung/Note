@@ -4,15 +4,16 @@
   android:orientation="vertical"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-  android:background="#00ffffff"
+  android:background="@drawable/tab_indicator"
   >
+  <!-- 
     <ImageView
      android:layout_width="wrap_content" 
      android:layout_height="wrap_content"
      android:layout_centerInParent="true"
      android:background="@drawable/login_bg"
     />
-    
+     -->
     <TextView
     	android:id="@+id/txtLogin"
     	android:layout_width="wrap_content" 
@@ -74,6 +75,7 @@
     	android:layout_width="match_parent" 
      	android:layout_height="wrap_content"
      	android:layout_marginRight="10dp"
+     	android:layout_marginLeft="5dp"
      	android:hint="password"
     />
     </LinearLayout>
@@ -92,8 +94,11 @@
      	android:layout_height="wrap_content"
      	android:layout_marginLeft="10dp"
      	android:text="Submit"
+     	android:textColor="#ffffff"
+     	android:textStyle="bold"
      	android:background="@drawable/button_bg"
      	android:layout_marginRight="5dp"
+     	android:onClick="onSubmit"
     />
     
     <Button
@@ -103,6 +108,9 @@
      	android:layout_marginRight="10dp"
      	android:text="Cancel"
      	android:background="@drawable/button_bg"
+     	android:onClick="onCancel"
+     	android:textColor="#ffffff"
+     	android:textStyle="bold"
     />
     </LinearLayout>
 </RelativeLayout>

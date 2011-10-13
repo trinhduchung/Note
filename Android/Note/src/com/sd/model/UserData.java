@@ -12,6 +12,7 @@ public class UserData {
 	public UserData(String username,String pw) {
 		Username = username;
 		Password = pw;
+		isAuthen = true;
 	}
 	
 	public void reset() {

@@ -32,8 +32,11 @@ public class NoteApplication extends Application {
 	}
 	
 	private void loadUserData() {
+		/*
         SecurityUtils.createCiphers("09099");
         userData = FileUtils.loadUserData(this);
+        */
+		userData = new UserData();
     }
 
     private void saveUserData() {
@@ -51,9 +54,9 @@ public class NoteApplication extends Application {
     }
     
     public void setUserdata(UserData data) {
-    	resetUserData();
+    	//resetUserData();
     	userData = data;
-    	saveUserData();
+    	//saveUserData();
     }
     
 	public Object get(String key) {

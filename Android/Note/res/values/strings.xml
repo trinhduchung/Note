@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
     <string name="hello">Hello World, NoteActivity!</string>
     <string name="app_name">Note</string>
     <string name="logo_text">Let\'s share to be shared</string>
     <string name="splash_text">Make your daily.Make your secret</string>
+    <string-array name="Spinner_Content">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
 </resources>

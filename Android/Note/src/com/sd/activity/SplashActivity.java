@@ -1,5 +1,12 @@
-package com.sd;
+package com.sd.activity;
 
+import com.sd.Config;
+import com.sd.NoteApplication;
+import com.sd.R;
+import com.sd.Config.activity;
+import com.sd.R.id;
+import com.sd.R.layout;
+import com.sd.R.string;
 import com.sd.model.UserData;
 
 import android.app.Activity;
@@ -63,10 +70,12 @@ public class SplashActivity extends Activity implements AnimationListener{
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		setContentView(R.layout.splash);
 		
-		scale = getResources().getDisplayMetrics().density;
-		xscale = (int)(18 * scale);
-		MaxWidth = (int) (300 * scale);
+		inflateView();
 		
+		checkLogin();
+	}
+	
+	private void checkLogin() {
 		UserData userData = NoteApplication.Instance().getUserdata();
 		if(userData.isAuthen) {
 			mTargetActivity = Config.activity.NoteActivity.toString();
@@ -81,7 +90,13 @@ public class SplashActivity extends Activity implements AnimationListener{
                 mTargetActivity = extras.getString("targetActivity");
             }
         }
-        
+	}
+	
+	private void inflateView() {
+		scale = getResources().getDisplayMetrics().density;
+		xscale = (int)(18 * scale);
+		MaxWidth = (int) (300 * scale);
+		
         mSologan = (TextView) findViewById(R.id.sologan);
         mLogo = (TextView) findViewById(R.id.logo_text);
         
@@ -128,7 +143,7 @@ public class SplashActivity extends Activity implements AnimationListener{
 	public void startNextActivity() {
 		Intent intent;
 		if(mTargetActivity.equals(Config.activity.NoteActivity.toString())) {
-			intent = new Intent(this, NoteActivity.class);
+			intent = new Intent(this, MainActivity.class);
 		} else {
 			intent = new Intent(this, LoginActivity.class);
 		}
