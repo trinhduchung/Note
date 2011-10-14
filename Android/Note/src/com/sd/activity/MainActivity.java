@@ -1,10 +1,5 @@
 package com.sd.activity;
 
-import com.sd.R;
-import com.sd.R.drawable;
-import com.sd.R.id;
-import com.sd.R.layout;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
+
+import com.sd.R;
 
 public class MainActivity extends TabActivity {
     @Override
@@ -24,10 +21,10 @@ public class MainActivity extends TabActivity {
     }
 
     private void setTabs() {
-    	addTab("Note", R.drawable.tab_home, NoteActivity.class);
-    	addTab("Daily", R.drawable.tab_home, NoteActivity.class);
-    	addTab("To Do List", R.drawable.tab_home, NoteActivity.class);
-    	addTab("Secret", R.drawable.tab_home, NoteActivity.class);
+    	addTab("Note", R.drawable.note_bg_h1, NoteActivity.class);
+    	addTab("Daily", R.drawable.note_bg_h2, NoteActivity.class);
+    	addTab("To Do List", R.drawable.note_bg_h3, NoteActivity.class);
+    	addTab("Secret", R.drawable.note_bg_h4, NoteActivity.class);
     }
     
     private void addTab(String labelId, int drawableId, Class<?> c)

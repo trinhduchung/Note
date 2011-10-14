@@ -29,10 +29,10 @@
 					android:layout_height="wrap_content" android:text="Note"
 					android:textSize="16dip" android:textColor="#ffffff" />
 			</LinearLayout>
-			<ImageView android:layout_width="70dip"
-				android:layout_gravity="center" android:layout_height="70dip"
+			<ImageView android:layout_width="wrap_content"
+				android:layout_gravity="center" android:layout_height="wrap_content"
 				android:layout_margin="5dip" android:id="@+id/button_library"
 				android:textColor="#FFFFFFFF" android:onClick="onLibraryClicked"
-				android:visibility="invisible" android:background="@drawable/note_book" />
+				 android:background="@drawable/btn_add_note" />
 		</LinearLayout>
 	</RelativeLayout>

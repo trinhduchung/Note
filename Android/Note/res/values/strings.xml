@@ -2,7 +2,7 @@
 <resources>
     <string name="hello">Hello World, NoteActivity!</string>
     <string name="app_name">Note</string>
-    <string name="logo_text">Let\'s share to be shared</string>
+    <string name="logo_text">Let\'s share to be share</string>
     <string name="splash_text">Make your daily.Make your secret</string>
     <string-array name="Spinner_Content">
         <item>One</item>

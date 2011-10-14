@@ -76,13 +76,13 @@ public class SplashActivity extends Activity implements AnimationListener{
 	}
 	
 	private void checkLogin() {
-		UserData userData = NoteApplication.Instance().getUserdata();
-		if(userData.isAuthen) {
-			mTargetActivity = Config.activity.NoteActivity.toString();
-		} else {
-			mTargetActivity = Config.activity.LoginActivity.toString();
-		}
-		
+//		UserData userData = NoteApplication.Instance().getUserdata();
+//		if(userData.isAuthen) {
+//			mTargetActivity = Config.activity.NoteActivity.toString();
+//		} else {
+//			mTargetActivity = Config.activity.LoginActivity.toString();
+//		}
+		mTargetActivity = Config.activity.NoteActivity.toString();
 		//check if a target activity was specified
         Bundle extras = getIntent().getExtras();
         if (null != extras) {
@@ -145,7 +145,7 @@ public class SplashActivity extends Activity implements AnimationListener{
 		if(mTargetActivity.equals(Config.activity.NoteActivity.toString())) {
 			intent = new Intent(this, MainActivity.class);
 		} else {
-			intent = new Intent(this, LoginActivity.class);
+			intent = new Intent(this, MainActivity.class);
 		}
 		
 		 startActivity(intent);
